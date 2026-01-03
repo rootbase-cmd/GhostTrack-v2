@@ -1,0 +1,8 @@
+App(
+    appid="ghost_beacon",
+    name="Ghost Beacon",
+    apptype=FlipperAppType.EXTERNAL,
+    entry="ghost_beacon.c",
+    requires=["gui", "storage"],
+    icon="icon.png",
+)

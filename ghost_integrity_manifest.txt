@@ -1,0 +1,13 @@
+# Ghost_Ops_Unit integrity manifest
+# Generated: 2026-01-02T16:37:22Z
+f6102ce4d5f46c06d486db8fbdc6c1f24c8c1df70eb8fb90fa02ca72d425f40a  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_ops_unit.sh
+8db8ead62398b7ef7396a2330be259f9771a411b7b663df8b5d15ebd77d250a6  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_war_mode.sh
+08d58b677cad7efc4c3945dafc3c3eb139a2cb0683bbc51822da574d25429bbf  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_survival_console.sh
+697175cdca0dcd6232d6a2e16b519becda060ddb315bf332dd5cd3a6e056208d  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_cb_terminal.sh
+35ba340ea99fd59dae5577d554a65f24a32c0170258f96aed201d2c0fc2a9c67  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_msg_send.sh
+c1c8e96235b4dd3b7e91676cd42667a9b1b06aef1c4d8d4181918853d44112fe  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_msg_recv.sh
+da334a65d74036cf40e82bd28b8bbfb8de8e917144ce30e69dc05d0b911d5c7d  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_text_only_mode.sh
+7ef16e0cd5277cfe8f523510870eb49496e529869f24f522f90a17bcda0ebc3d  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_ops_unit/orbit/orbit.sh
+cf3eb12f52cded6248bb8a7ca2b41041352a4b54fe3d0d1ac816bd0e61245897  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_ops_unit/orbit/engine/sync_bridge.sh
+7d6c84204293993d1210c107df9a700a13f74093fca6e79f776aff08c441608f  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_os/ritual_engine/ritual_engine.py
+c64b27f55a9223cb441c901ec8acfbb98067f3087a6cd50c9b1ec67cbbb2b9c2  /data/data/com.termux/files/home/Ghost_Ops_Unit/ghost_os/ritual_engine/orbit_hook.sh

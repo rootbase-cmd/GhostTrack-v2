@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Heartbeat anomaly",
+        "condition": "heartbeat_fail",
+        "action": "purification_ritual"
+    },
+    {
+        "name": "Ghost Beacon anomaly",
+        "condition": "beacon_anomaly",
+        "action": "environment_scan"
+    }
+]
