@@ -1,3 +1,14 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo ""
+echo "=== GHOSTTRACK AUTOGEN HTML RITUAL — FULL EDITION ==="
+echo ""
+
+mkdir -p docs
+
+BUILD_TIME=$(date)
+
+cat > docs/index.html << EOF
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -52,7 +63,7 @@ a:hover { text-decoration:underline; }
   <div class="hero-subtitle">Informazioni locali, uptime e build info.</div>
   <ul>
     <li><b>Versione Hub:</b> 1.0</li>
-    <li><b>Build:</b> Wed Jan  7 19:13:41 CET 2026</li>
+    <li><b>Build:</b> ${BUILD_TIME}</li>
     <li><b>Uptime Browser:</b> <span id="uptime">0s</span></li>
     <li><b>Modalità:</b> Offline‑first</li>
   </ul>
@@ -209,3 +220,14 @@ setTimeout(updateMesh,1500); setInterval(updateMesh,7000);
 
 </body>
 </html>
+EOF
+
+echo "[+] Generato docs/index.html"
+echo "[+] Build time: ${BUILD_TIME}"
+echo ""
+echo "Ora esegui:"
+echo "  git add docs/index.html"
+echo "  git commit -m \"GhostTrack: full autogen\""
+echo "  git push"
+echo ""
+
