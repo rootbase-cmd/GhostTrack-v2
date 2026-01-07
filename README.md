@@ -224,6 +224,40 @@ Per contribuire a:
 - progetti scientifici globali  
 
 ---
+7
+
+# 🌌 GhostTrack‑v2 — Pragone Node
+GhostTrack‑v2 è un nodo operativo della costellazione GhostTrack:  
+una rete etica, resiliente e decentralizzata di osservatori territoriali.
+
+Questo nodo — **Pragone Node** — integra:
+- Geo‑Sentinel (monitoraggio territoriale)
+- Mesh Node (rete locale)
+- Starlink Link Monitor
+- Telemetria locale
+- OSINT Panel
+- Live 3D Atlas
+- GhostRelay (bridge concettuale verso SSH/SIP/retro)
+- Console Operativa
+- Sistema di build automatico (autogen)
+
+---
+
+## 🛰 Architettura del Nodo
+
+```text
+Browser → GhostTrack Hub (docs/index.html)
+          ↓
+          GhostRelay Panel
+          ↓
+          ghostrelayd (futuro demone WebSocket/SSH)
+          ↓
+          Sistema locale (Termux / Linux)
+
+
+
+
+
 
 # 🔒 **ETICA & LEGALITÀ**
 
