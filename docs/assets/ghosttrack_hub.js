@@ -1,0 +1,1 @@
+// GhostTrack Hub JS loaded
