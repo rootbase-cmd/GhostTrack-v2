@@ -1,234 +1,268 @@
-# 🐺 GHOSTTRACK  
-**La rinascita dello spirito BackTrack.  
-Un framework rituale, modulare e operativo.**
+# 🌐 **GHOSTTRACK – GLOBAL OBSERVER FRAMEWORK**  
+### _Ethical Awareness · OSINT Intelligence · Planetary Monitoring · Scientific Resilience_
+
+`https://img.shields.io/badge/Status-Active-blue`
+`https://img.shields.io/badge/Ethical-100%25-green`
+`https://img.shields.io/badge/Compliance-Legal%20OSINT-yellow`
+`https://img.shields.io/badge/Mode-Offline--First-orange`
+`https://img.shields.io/badge/Privacy-Tor%20Enhanced-purple`
+`https://img.shields.io/badge/System-Resilient-red`
+`https://img.shields.io/badge/Role-Global%20Observer-lightgrey`
+
+<!-- Badge “per chi osserva attentamente” -->
+`https://img.shields.io/badge/Signal-Patterns%20Never%20Lie-black`
+`https://img.shields.io/badge/Planetary-Intelligence-0a84ff`
+`https://img.shields.io/badge/Conscious-System-444444`
+`https://img.shields.io/badge/Ghost-Always%20Watching-111111`
+`https://img.shields.io/badge/Noise-Low%20Profile-222222`
+`https://img.shields.io/badge/Surface-Deep%20Signals-333333`
 
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Build](https://img.shields.io/badge/Build-GhostOps-black)]()
-[![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-blue)]()
-[![Identity](https://img.shields.io/badge/Identity-BackTrack%20Reborn-red)]()
+---
 
+# 🛰️ **INTRODUZIONE**
 
-📄 Whitepaper / README – Civil Resilience OS
-Titolo:
+GhostTrack è un sistema di **osservazione globale**, progettato per raccogliere, correlare e interpretare dati pubblici provenienti da:
 
-Civil Resilience GhostTrack v2 – Piattaforma Operativa per Sicurezza, Continuità e Connettività in Scenari Critici
-1. Introduzione
+- infrastrutture  
+- ambiente  
+- traffico aereo  
+- traffico marittimo  
+- orbite satellitari  
+- open data istituzionali  
+- fenomeni meteorologici  
+- segnali territoriali  
+
+GhostTrack non attacca, non viola, non interferisce.  
+GhostTrack **osserva**, **analizza**, **protegge**.
 
-Civil Resilience OS è una distribuzione Linux progettata per garantire sicurezza, autonomia e continuità operativa in contesti civili, professionali e di emergenza.
-L’obiettivo è fornire un ambiente affidabile che rimanga funzionale anche in condizioni di:
+---
 
-    rete instabile o assente
+# 🚀 **MISSIONE**
 
-    blackout prolungati
+GhostTrack nasce per:
 
-    crisi infrastrutturali
+- aumentare la consapevolezza tecnica del territorio  
+- monitorare superfici critiche globali  
+- rilevare pattern e anomalie  
+- supportare enti, scuole, sportivi, ricercatori  
+- funzionare anche offline  
+- proteggere la privacy dell’operatore  
+- ridurre al minimo l’esposizione di rete  
 
-    emergenze civili o naturali
+GhostTrack è un **osservatore etico**, non un framework offensivo.
 
-    necessità di comunicazioni sicure
+---
 
-La distro integra strumenti 100% legali, orientati alla difesa, alla resilienza digitale e alla connettività continua, senza includere componenti offensive o potenzialmente illegali.
-2. Filosofia del progetto
+# 🧠 **FUNZIONALITÀ PRINCIPALI**
 
-Civil Resilience OS si basa su quattro principi fondamentali:
-2.1 Sicurezza by Design
+## 🔋 Energia & Infrastrutture  
+- Open Data energetici  
+- Report blackout  
+- Indicatori di stabilità di rete  
+
+## ✈️ Traffico Aereo  
+- ADS‑B Exchange → [https://www.adsbexchange.com](https://www.adsbexchange.com)  
+- NOTAM FAA → [https://www.notams.faa.gov](https://www.notams.faa.gov)  
+- Meteo aeronautico  
 
-Il sistema è costruito con un approccio “secure-by-default”, includendo:
+## 🚢 Traffico Marittimo  
+- AIS pubblico → [https://www.marinetraffic.com](https://www.marinetraffic.com)  
+- Dati IMO  
+- Porti open‑data  
 
-    cifratura completa del disco
+## 🛰️ Orbita & Ricerca Spaziale  
+GhostTrack integra dati da:
 
-    firewall preconfigurato
+- Celestrak (TLE) → [https://www.celestrak.com](https://www.celestrak.com)  
+- SETI Institute → [https://www.seti.org](https://www.seti.org)  
+- NASA EarthData → [https://earthdata.nasa.gov](https://earthdata.nasa.gov)  
+- NOAA Space Weather → [https://www.swpc.noaa.gov](https://www.swpc.noaa.gov)  
+- Radioastronomia pubblica (radiotelescopi open)  
 
-    sandboxing applicativo
+## 🌦️ Meteo & Ambiente  
+- micro‑climi locali  
+- variazioni atmosferiche  
+- correlazioni con Starlink (rain fade)  
+- dati ARPA  
+- dati Copernicus  
 
-    gestione sicura delle credenziali
+## 🌱 **Agricoltura – GhostTrack AgroWatch**  
+GhostTrack supporta:
 
-2.2 Continuità Operativa
+- monitoraggio vigneti  
+- stress idrico  
+- rischio gelate  
+- rischio muffe  
+- umidità del suolo  
+- temperatura fogliare  
+- correlazioni meteo‑agricole  
 
-La distro è progettata per mantenere la connettività e la funzionalità anche in condizioni avverse, grazie a:
+Perfetto per territori collinari come **Pragone – Pietra de’ Giorgi**.
 
-    hotspot integrato
+---
 
-    tethering avanzato
+# 🛰️ **STARLINK GEO‑SENTINEL NODE**
 
-    reti mesh locali
+GhostTrack integra Starlink come:
 
-    VPN resilienti
+- nodo di osservazione atmosferica  
+- rilevatore di attenuazioni (rain fade)  
+- sensore passivo di micro‑variazioni climatiche  
+- hub Mesh per sensori ambientali  
+- nodo offline‑first per zone remote  
 
-    strumenti offline-first
+Starlink non viene modificato né alterato.  
+GhostTrack utilizza **solo dati legali e pubblici**.
 
-2.3 Resilienza Civile
+---
 
-Il sistema include strumenti utili in scenari di emergenza:
+# 🧩 **ARCHITETTURA**
 
-    mappe offline
+## 1️⃣ Offline‑First  
+- funziona anche senza internet  
+- sincronizzazione minima  
+- dataset locali  
+- modalità “isolata”  
 
-    comunicazioni locali senza Internet
+## 2️⃣ Privacy & Tor  
+Tor Project → [https://www.torproject.org](https://www.torproject.org)  
+Usato solo per:
 
-    sincronizzazione P2P
+- anonimizzazione  
+- protezione dell’operatore  
+- riduzione superficie esposta  
 
-    servizi locali di comunità
+## 3️⃣ Emergency Beacon System (EBS)  
+Un sistema legale, passivo, universale.
 
-2.4 Legalità e Trasparenza
+### 📱 **EBS‑Universal Beacon (software)**  
+Compatibile con:
 
-Tutti i componenti sono open-source e legalmente utilizzabili.
-Non sono inclusi strumenti di hacking offensivo, cracking o intrusioni.
-3. Architettura del Sistema
+- smartphone  
+- smartwatch  
+- tablet  
+- laptop  
 
-Civil Resilience OS è organizzata in moduli funzionali, ognuno dei quali può essere aggiornato o esteso in modo indipendente.
-4. Modulo: CIV-CONNECT (Always-On Connectivity)
+Funzioni:
 
-Il cuore della distro.
-Progettato per garantire la massima probabilità di connessione legale in ogni situazione.
-4.1 Gestione Wi‑Fi avanzata
+- invio SOS tramite BLE  
+- SOS via Wi‑Fi SSID  
+- QR‑SOS dinamico  
+- file di emergenza offline  
 
-    auto-scan reti disponibili
+### 🔑 **EBS‑KeyTag (concept legale)**  
+Un portachiavi:
 
-    priorità configurabili (casa → tethering → free Wi‑Fi)
+- piccolo  
+- sicuro  
+- BLE‑based  
+- nessuna interferenza radio  
+- un solo pulsante  
+- invio SOS locale  
 
-    riconoscimento automatico captive portal
+---
 
-4.2 Hotspot personale
+# 🏛️ **GHOSTTRACK EDU – COLLABORAZIONE SCOLASTICA**
 
-    creazione immediata di un access point protetto
+`https://img.shields.io/badge/Program-GhostTrack%20EDU-0057b8`
 
-    condivisione connessione via Ethernet, Wi‑Fi o modem
+GhostTrack avvia un percorso istituzionale con **scuole elementari**, per:
 
-4.3 Modem e tethering
+- educazione digitale  
+- osservazione ambientale  
+- meteorologia di base  
+- introduzione ai dati pubblici  
+- sensibilità verso il territorio  
 
-    supporto completo per chiavette 4G/5G
+### 🎓 Laboratori  
+- “Il Meteo che Cambia”  
+- “Segnali dal Cielo”  
+- “La Terra Respira”  
+- “La Rete Invisibile”  
 
-    tethering USB/Wi‑Fi/Bluetooth
+---
 
-    rilevamento automatico smartphone come sorgente rete
+# 🏅 **GHOSTTRACK SPORT EXTREME**
 
-4.4 Reti mesh locali
+`https://img.shields.io/badge/Program-Sport%20Extreme-brown`
 
-    supporto B.A.T.M.A.N. o equivalenti
+GhostTrack supporta attività outdoor:
 
-    chat locale web
+- trekking  
+- trail running  
+- MTB  
+- esplorazioni naturalistiche  
+- attività in zone remote  
 
-    bacheca messaggi offline
+### Supporto informativo  
+- micro‑meteo  
+- variazioni atmosferiche  
+- monitoraggio ambientale  
+- sicurezza preventiva  
 
-4.5 VPN e connessioni resilienti
+### Integrazione EBS  
+Il modulo EBS è pensato per:
 
-    profili OpenVPN e WireGuard
+- sportivi  
+- guide  
+- associazioni  
+- enti territoriali  
 
-    mosh per sessioni stabili anche con rete intermittente
+---
 
-5. Modulo: SECURE-CORE (Protezione e Privacy)
-5.1 Sicurezza del dispositivo
+# 🔭 **GHOSTTRACK BOINC NODE – RICERCA SCIENTIFICA DISTRIBUITA**
 
-    cifratura LUKS2
+GhostTrack mira a una futura integrazione con:
 
-    firewall nftables
+- BOINC → [https://boinc.berkeley.edu](https://boinc.berkeley.edu)  
 
-    sandbox Firejail
+Per contribuire a:
 
-    password manager offline
+- analisi ambientali  
+- modelli climatici  
+- ricerca spaziale  
+- progetti scientifici globali  
 
-5.2 Comunicazioni sicure
+---
 
-    Signal Desktop
+# 🔒 **ETICA & LEGALITÀ**
 
-    Element (Matrix)
+GhostTrack è:
 
-    Session (opzionale)
+- 100% legale  
+- 100% OSINT  
+- 100% passivo  
+- 0% intrusivo  
 
-6. Modulo: FORENSICS & MONITOR (Analisi e Diagnostica)
-6.1 Monitoraggio
+---
 
-    OSQuery
+# 📜 **LICENZA**
 
-    auditd
+✔️ uso personale  
+✔️ uso professionale  
+✔️ uso educativo  
+✔️ uso civile  
 
-    strumenti di log avanzati
+❌ fork  
+❌ modifiche  
+❌ redistribuzioni alterate  
+❌ reverse engineering  
 
-6.2 Analisi rete
+---
 
-    Wireshark (uso legale)
+# 🛡️ **DICHIARAZIONE LEGALE**
 
-    tcpdump
+Il progetto GhostTrack è sviluppato nel rispetto delle normative vigenti.  
+Non svolge attività di intrusione, interferenza o intercettazione.
 
-    nmap per diagnostica interna
+**Responsabile legale:**  
+P.IVA **11040550961**  
+(ZDOS – denominazione registrata)
 
-7. Modulo: CIV-TOOLS (Strumenti di Sopravvivenza Digitale)
-7.1 Mappe offline
+---
 
-    OpenStreetMap offline
+# 🌍 **HASHTAG UFFICIALI**
 
-    Marble / OsmAnd Desktop
+`#GhostTrack #GlobalObserver #EthicalAwareness #OSINTFramework #CriticalSurfaceMonitoring #PlanetWatch #InfrastructureOSINT #EnergyWatch #AviationWatch #MarineWatch #SatelliteTracking #PrivacyByDesign #OfflineFirst #ResilientSystems #OpenData #GeoInt #AnomalyDetection #DigitalConscience #PlanetaryIntelligence #ResilientFuture #GhostTrackEDU #GhostTrackSportExtreme #GhostTrackAgroWatch #GhostTrackBOINC`
 
-7.2 Sincronizzazione e servizi locali
 
-    Syncthing P2P
-
-    server locale per note e file (Nextcloud locale opzionale)
-
-7.3 Modalità offline-first
-
-    email con invio differito
-
-    repository aggiornamenti offline
-
-8. Scenari d’Uso
-Scenario A – Città con rete disponibile
-
-    connessione automatica a reti fidate
-
-    gestione captive portal
-
-    hotspot per condividere la connessione
-
-Scenario B – Rete instabile
-
-    tethering USB
-
-    modem 4G/5G
-
-    VPN resiliente
-
-    mosh per sessioni persistenti
-
-Scenario C – Nessuna Internet
-
-    rete mesh locale
-
-    chat e bacheca offline
-
-    mappe e documenti offline
-
-    sincronizzazione P2P
-
-9. Legalità e Responsabilità
-
-Civil Resilience OS è progettata per:
-
-    uso civile
-
-    protezione personale
-
-    continuità operativa
-
-    comunicazioni sicure
-
-    resilienza in emergenza
-
-Non include strumenti di attacco, cracking o intrusione.
-L’utente è responsabile dell’uso conforme alle leggi del proprio paese.
-10. Roadmap
-
-    v1.0 – Base system + CIV-CONNECT
-
-    v1.1 – Modulo mesh + mappe offline
-
-    v1.2 – Modulo forensics & monitor
-
-    v1.3 – Documentazione offline integrata
-
-    v2.0 – Versione LTS con supporto esteso
-
-11. Conclusione
-
-GhostTrack v2 OS nasce per offrire una piattaforma robusta, sicura e autonoma, capace di funzionare anche quando le infrastrutture tradizionali falliscono.
-È uno strumento pensato per cittadini, operatori, volontari, tecnici e comunità che vogliono essere preparati a scenari complessi senza violare alcuna legge.
