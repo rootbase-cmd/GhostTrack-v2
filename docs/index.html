@@ -68,6 +68,14 @@ h1 {
   color: #aaa;
   margin-bottom: 10px;
 }
+
+a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 </style>
 </head>
 
@@ -75,58 +83,44 @@ h1 {
 <header>
   <h1>GhostTrack Hub</h1>
 </header>
+
+<!-- Nodo Locale -->
+<section class="panel" id="local-node">
+  <div class="panel-header">
+    <div class="panel-title">Nodo Locale</div>
+    <div class="panel-badge">Core</div>
+  </div>
+  <div class="hero-title">GhostTrack Node Pragone</div>
+  <div class="hero-subtitle">
+    Nodo operativo nella costellazione GhostTrack, colline dell'Oltrepò Pavese.
+  </div>
+  <ul>
+    <li><b>Ruolo:</b> Geo‑Sentinel / Mesh‑Ready</li>
+    <li><b>Posizione:</b> Pragone, Pietra de' Giorgi (PV)</li>
+    <li><b>Modalità:</b> Offline‑first, resiliente, zero‑trust</li>
+  </ul>
+</section>
+
+<!-- Geo‑Sentinel -->
 <section class="panel" id="geo-sentinel">
   <div class="panel-header">
     <div class="panel-title">Geo‑Sentinel</div>
-    <div class="panel-badge">Offline Maps</div>
+    <div class="panel-badge">Territory</div>
   </div>
 
-  <div class="hero-title">Mappe Offline & Monitoraggio Territoriale</div>
+  <div class="hero-title">Nodo Territoriale: Pragone</div>
   <div class="hero-subtitle">
-    Visualizzazione locale, resiliente e indipendente da API esterne.
+    Monitoraggio locale, mappe offline, posizione nodo e area operativa.
   </div>
 
-  <div id="map" style="height: 380px; border-radius: 12px; margin-top: 10px;"></div>
+  <div id="map" style="height: 420px; border-radius: 12px; margin-top: 10px;"></div>
 
   <p style="margin-top:10px; font-size:12px; color:#888;">
-    Le mappe offline sono caricate da <code>docs/maps/</code>.
+    Geo‑Sentinel attivo. Coordinate nodo locale: <code>45.0389, 9.2430</code>.
   </p>
 </section>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<script>
-function initGeoSentinel() {
-  const mapEl = document.getElementById('map');
-  if (!mapEl) return;
-
-  const map = L.map('map', {
-    zoomControl: true,
-    attributionControl: false
-  }).setView([45.0, 9.0], 10);
-
-  const offlineTiles = L.tileLayer('./maps/tiles/{z}/{x}/{y}.png', {
-    minZoom: 1,
-    maxZoom: 18,
-    errorTileUrl: './maps/blank.png'
-  });
-
-  offlineTiles.addTo(map);
-
-  fetch('./maps/region.geojson')
-    .then(r => r.json())
-    .then(data => {
-      L.geoJSON(data, {
-        style: { color: '#00b7ff', weight: 2 }
-      }).addTo(map);
-    })
-    .catch(() => {
-      console.log('[GeoSentinel] Nessun GeoJSON trovato.');
-    });
-}
-
-initGeoSentinel();
-</script>
+<!-- BOINC Hub -->
 <section class="panel" id="boinc-hub">
   <div class="panel-header">
     <div class="panel-title">BOINC Hub</div>
@@ -134,7 +128,7 @@ initGeoSentinel();
   </div>
   <div class="hero-title">Calcolo distribuito</div>
   <div class="hero-subtitle">
-    Accesso rapido ai progetti BOINC reali.
+    Accesso rapido a progetti BOINC reali.
   </div>
   <ul>
     <li><a href="https://boinc.berkeley.edu/projects.php" target="_blank">Elenco progetti BOINC</a></li>
@@ -143,6 +137,7 @@ initGeoSentinel();
   </ul>
 </section>
 
+<!-- SETI / Radio -->
 <section class="panel" id="seti-hub">
   <div class="panel-header">
     <div class="panel-title">SETI / Radio</div>
@@ -159,6 +154,7 @@ initGeoSentinel();
   </ul>
 </section>
 
+<!-- Mesh & Tools -->
 <section class="panel" id="mesh-tools">
   <div class="panel-header">
     <div class="panel-title">Mesh & Tools</div>
@@ -175,6 +171,38 @@ initGeoSentinel();
     <li><a href="https://nmap.online" target="_blank">Nmap Online</a></li>
   </ul>
 </section>
+
+<!-- Red Bull TV -->
+<section class="panel" id="redbull-tv">
+  <div class="panel-header">
+    <div class="panel-title">Red Bull TV</div>
+    <div class="panel-badge">Stream</div>
+  </div>
+  <div class="hero-title">Canale Live</div>
+  <div class="hero-subtitle">
+    Collegamento diretto a Red Bull TV per streaming esterno.
+  </div>
+  <p>
+    <a href="https://www.redbull.com/int-en/tv" target="_blank">Apri Red Bull TV in una nuova scheda</a>
+  </p>
+</section>
+
+<!-- Telemetria -->
+<section class="panel" id="telemetry-panel">
+  <div class="panel-header">
+    <div class="panel-title">Telemetria Locale</div>
+    <div class="panel-badge">Sensors</div>
+  </div>
+
+  <div class="hero-title">Raccolta dati ambientali</div>
+  <div class="hero-subtitle">
+    Lettura sensori browser: geolocalizzazione, orientamento (se disponibili).
+  </div>
+
+  <pre id="telemetry-output" style="background:#000; color:#0f0; padding:10px; border-radius:8px; height:160px; overflow:auto; font-size:12px;">Telemetria in attesa...</pre>
+</section>
+
+<!-- Console Operativa -->
 <section class="panel" id="console-panel">
   <div class="panel-header">
     <div class="panel-title">Console Operativa</div>
@@ -191,7 +219,127 @@ initGeoSentinel();
   <input id="console-input" type="text" placeholder="comando..." style="width:100%; margin-top:8px; padding:6px; border-radius:6px; border:1px solid #333; background:#050505; color:#eee;">
 </section>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 <script>
+// Geo‑Sentinel Pragone
+const NODE_LAT = 45.0389;
+const NODE_LON = 9.2430;
+
+function initGeoSentinel() {
+  const map = L.map('map', {
+    zoomControl: true,
+    attributionControl: false
+  }).setView([NODE_LAT, NODE_LON], 14);
+
+  const offlineTiles = L.tileLayer('./maps/tiles/{z}/{x}/{y}.png', {
+    minZoom: 1,
+    maxZoom: 18,
+    errorTileUrl: './maps/blank.png'
+  });
+
+  const onlineTiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19
+  });
+
+  const baseLayers = {
+    "Offline": offlineTiles,
+    "Online": onlineTiles
+  };
+
+  offlineTiles.addTo(map);
+  L.control.layers(baseLayers, null, { position: 'topright' }).addTo(map);
+
+  const nodeMarker = L.marker([NODE_LAT, NODE_LON]).addTo(map);
+  nodeMarker.bindPopup("<b>GhostTrack Node</b><br>Pragone, Pietra de' Giorgi");
+
+  const area = L.circle([NODE_LAT, NODE_LON], {
+    radius: 600,
+    color: "#00b7ff",
+    fillColor: "#00b7ff",
+    fillOpacity: 0.15
+  }).addTo(map);
+
+  const legend = L.control({ position: "bottomleft" });
+  legend.onAdd = function () {
+    const div = L.DomUtil.create("div", "legend");
+    div.style.background = "#111";
+    div.style.padding = "10px";
+    div.style.borderRadius = "8px";
+    div.style.fontSize = "12px";
+    div.innerHTML = `
+      <b style="color:#00e0ff;">Legenda</b><br>
+      • <span style="color:#00b7ff;">Cerchio</span>: area operativa<br>
+      • <span style="color:#fff;">Marker</span>: nodo locale<br>
+      • Offline/Online: selettore layer
+    `;
+    return div;
+  };
+  legend.addTo(map);
+
+  map.on("mousemove", function (e) {
+    if (!window.coordBox) {
+      window.coordBox = L.control({ position: "bottomright" });
+      window.coordBox.onAdd = function () {
+        const div = L.DomUtil.create("div", "coords");
+        div.style.background = "#111";
+        div.style.padding = "6px";
+        div.style.borderRadius = "6px";
+        div.style.fontSize = "11px";
+        div.style.opacity = "0.8";
+        div.id = "coordBox";
+        return div;
+      };
+      window.coordBox.addTo(map);
+    }
+    document.getElementById("coordBox").innerHTML =
+      `Lat: ${e.latlng.lat.toFixed(5)}<br>Lon: ${e.latlng.lng.toFixed(5)}`;
+  });
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(pos => {
+      const userLat = pos.coords.latitude;
+      const userLon = pos.coords.longitude;
+
+      L.marker([userLat, userLon]).addTo(map).bindPopup("La tua posizione");
+    });
+  }
+}
+
+initGeoSentinel();
+
+// Telemetria base
+(function() {
+  const out = document.getElementById('telemetry-output');
+  if (!out) return;
+
+  function log(line) {
+    out.textContent += "\n" + line;
+    out.scrollTop = out.scrollHeight;
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(pos => {
+      log("Geoloc: " + pos.coords.latitude.toFixed(5) + ", " + pos.coords.longitude.toFixed(5));
+    }, () => {
+      log("Geoloc: non autorizzata.");
+    });
+  } else {
+    log("Geoloc non supportata.");
+  }
+
+  if (window.DeviceOrientationEvent) {
+    window.addEventListener("deviceorientation", function(e) {
+      log("Orientamento: alpha=" + (e.alpha||0).toFixed(1) +
+          " beta=" + (e.beta||0).toFixed(1) +
+          " gamma=" + (e.gamma||0).toFixed(1));
+    }, { once: true });
+  } else {
+    log("Orientamento non supportato.");
+  }
+})();
+
+// Console operativa
 (function() {
   const outEl = document.getElementById('console-output');
   const inEl  = document.getElementById('console-input');
