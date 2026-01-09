@@ -331,3 +331,13 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=45&longitude=9&daily=moon
 <script src="assets/js/approval_panel.js"></script>
 <script>document.addEventListener("DOMContentLoaded", ()=>ApprovalPanel.render("approval-panel"))</script>
 <!-- End approval panel -->
+<!-- Status badge -->
+<div id="status-badge" style="position:fixed;right:12px;top:12px;z-index:9999"></div>
+<script src="assets/js/status_badge.js"></script>
+<script>document.addEventListener("DOMContentLoaded", ()=>StatusBadge.render("status-badge"))</script>
+<!-- End status badge -->
+<!-- Audit panel -->
+<div id="audit-panel" style="margin-top:20px"></div>
+<script src="assets/js/audit_panel.js"></script>
+<script>document.addEventListener("DOMContentLoaded", ()=>AuditPanel.render("audit-panel"))</script>
+<!-- End audit panel -->
