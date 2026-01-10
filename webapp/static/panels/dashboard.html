@@ -1,25 +1,84 @@
 <div class="panel">
-  <div class="panel-header">
-    <div>
-      <div class="panel-title">Dashboard</div>
-      <div class="panel-subtitle">Stato complessivo della costellazione GhostTrack</div>
+  <h1>📡 GhostTrack‑v3 — Dashboard Nodo</h1>
+  <p class="subtitle">
+    Stato rapido del nodo di osservazione, crediti energetici e accesso ai domini principali.
+  </p>
+
+  <div class="dashboard-grid" style="margin-top: 12px;">
+    <div class="card">
+      <div class="card-title">
+        <span>API / Telemetria Nodo</span>
+        <span class="badge success" id="dash-api-mode">--</span>
+      </div>
+      <div class="card-metric" id="dash-api-status">In attesa…</div>
+      <div class="card-sub" id="dash-api-ts">Nessun dato ancora.</div>
     </div>
-  </div>
-  <div class="panel-grid">
-    <div class="stat-card">
-      <div class="stat-label">Stato API</div>
-      <div class="stat-value" id="dash-api-status">Vedi barra in alto</div>
-      <div class="stat-extra">Monitoraggio continuo dell'endpoint /api/status</div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Crediti energetici</span>
+        <span class="badge">Wallet</span>
+      </div>
+      <div class="card-metric" id="dash-credits-total">--</div>
+      <div class="card-sub" id="dash-credits-delta">Variazione 24h: --</div>
+      <button class="button-inline" onclick="loadPanel('wallet')">
+        💳 Apri pannello Wallet
+      </button>
     </div>
-    <div class="stat-card">
-      <div class="stat-label">Modulo Starlink</div>
-      <div class="stat-value">Attivo</div>
-      <div class="stat-extra">Controllo e crediti energetici ibridi</div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Media & Live</span>
+        <span class="badge warning">Red Bull TV</span>
+      </div>
+      <div class="card-sub">
+        Sessioni media possono essere collegate al wallet crediti per simulare consumo/ricarica energetica.
+      </div>
+      <button class="button-inline" onclick="loadPanel('media_live')">
+        🎥 Apri pannello Media & Live
+      </button>
     </div>
-    <div class="stat-card">
-      <div class="stat-label">Podcast liberi</div>
-      <div class="stat-value">Pronto</div>
-      <div class="stat-extra">Ascolto diretto dalla console</div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Documentazione</span>
+        <span class="badge">Wiki</span>
+      </div>
+      <div class="card-sub">
+        Accedi alla documentazione tecnica, all'executive report, alla roadmap e alla pagina About direttamente dal menu.
+      </div>
+      <button class="button-inline" onclick="window.open('docs/INDEX.md','_blank')">
+        📘 Apri Documentazione Tecnica
+      </button>
     </div>
   </div>
 </div>
+
+<script>
+// Mini hook per aggiornare i widget dashboard in base allo status API
+(function syncDashboardStatus() {
+  const textEl = document.getElementById("api-status-text");
+  const dotEl = document.getElementById("api-status-indicator");
+  const dashStatus = document.getElementById("dash-api-status");
+  const dashTs = document.getElementById("dash-api-ts");
+  const dashMode = document.getElementById("dash-api-mode");
+
+  if (!textEl || !dashStatus || !dashMode) return;
+
+  setTimeout(() => {
+    dashStatus.textContent = textEl.textContent.replace("API: ", "");
+    if (dotEl && dotEl.classList.contains("online")) {
+      dashMode.textContent = "Online";
+    } else if (dotEl && dotEl.classList.contains("degraded")) {
+      dashMode.textContent = "Degradato";
+    } else {
+      dashMode.textContent = "Offline";
+    }
+    // Timestamp se presente nel testo
+    const parts = textEl.textContent.split("—");
+    if (parts.length > 1) {
+      dashTs.textContent = "Ultimo aggiornamento " + parts[1].trim();
+    }
+  }, 600);
+})();
+</script>
