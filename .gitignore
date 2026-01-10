@@ -28,3 +28,4 @@ Thumbs.db
 *.log
 *.tmp
 .cache/
+.eco_token
