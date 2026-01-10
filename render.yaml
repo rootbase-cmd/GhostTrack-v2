@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ghosttrack-api
+    env: python
+    buildCommand: pip install -r api/requirements.txt
+    startCommand: gunicorn -w 4 -b 0.0.0.0:10000 api.app:app
+    plan: free

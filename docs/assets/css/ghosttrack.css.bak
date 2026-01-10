@@ -1,0 +1,97 @@
+/* Tema Premium GhostTrack-v2 */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #050711;
+  color: #e5f7ff;
+}
+
+header {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #1b2235;
+  background: radial-gradient(circle at top, #1b2a4a, #050711);
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #1b2235;
+  background: #070a16;
+}
+
+.tab {
+  flex: 1 1 50%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+  border-right: 1px solid #1b2235;
+  border-bottom: 1px solid #1b2235;
+}
+
+.tab.active {
+  background: #11182b;
+  color: #7fffd4;
+  font-weight: 600;
+}
+
+.panel {
+  padding: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: #0b1020;
+  border: 1px solid #1b2235;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  margin: 2px 2px 0 0;
+  border: 1px solid #2f3c5f;
+}
+
+.badge-ok { border-color: #00c853; color: #00c853; }
+.badge-warn { border-color: #ffb300; color: #ffb300; }
+.badge-off { border-color: #546e7a; color: #546e7a; }
+
+input, button {
+  background: #050814;
+  border: 1px solid #1b2235;
+  color: #e5f7ff;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background: #11182b;
+}
+
+button:hover {
+  background: #1a2540;
+}

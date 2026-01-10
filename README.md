@@ -1,234 +1,244 @@
-# 🐺 GHOSTTRACK  
-**La rinascita dello spirito BackTrack.  
-Un framework rituale, modulare e operativo.**
+# **README.md — GhostTrack‑v2**  
+### *Nodo Operativo Etico · Dashboard Premium · Sistema Locale Autonomo*
 
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Build](https://img.shields.io/badge/Build-GhostOps-black)]()
-[![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-blue)]()
-[![Identity](https://img.shields.io/badge/Identity-BackTrack%20Reborn-red)]()
+---
 
+## 🌌 **Cos’è GhostTrack‑v2**
 
-📄 Whitepaper / README – Civil Resilience OS
-Titolo:
+GhostTrack‑v2 è un **nodo operativo etico**, progettato per funzionare come:
 
-Civil Resilience GhostTrack v2 – Piattaforma Operativa per Sicurezza, Continuità e Connettività in Scenari Critici
-1. Introduzione
+- plancia di osservazione territoriale  
+- sistema di telemetria locale  
+- dashboard offline/online  
+- archivio scientifico personale  
+- interfaccia mesh-ready  
+- ambiente di monitoraggio ambientale  
+- hub di contenuti sportivi e astronomici  
+- sistema di “Credito Energetico” simbolico  
 
-Civil Resilience OS è una distribuzione Linux progettata per garantire sicurezza, autonomia e continuità operativa in contesti civili, professionali e di emergenza.
-L’obiettivo è fornire un ambiente affidabile che rimanga funzionale anche in condizioni di:
+Il progetto è costruito per essere **autonomo**, **modulare**, **offline‑ready** e completamente **non invasivo**.  
+Non raccoglie dati personali, non invia nulla all’esterno e non richiede backend.
 
-    rete instabile o assente
+---
 
-    blackout prolungati
+## 🧱 **Architettura**
 
-    crisi infrastrutturali
+```
+GhostTrack-v2/
+ ├── docs/
+ │    ├── index.html          → Dashboard principale
+ │    ├── telemetry.json      → Telemetria locale (struttura reale)
+ │    ├── favicon.ico         → Icona (opzionale)
+ │    ├── maps/               → Mappe offline
+ │    └── assets/
+ │         ├── css/
+ │         │    └── ghosttrack.css   → Tema premium
+ │         ├── js/
+ │         │    └── ghosttrack.js    → Motore unico della dashboard
+ │         ├── sport/                → Video offline
+ │         └── astro/                → Immagini astronomiche offline
+ ├── ghosttrack_dev.sh        → Script DevOps locale
+ └── README.md                → Questo file
+```
 
-    emergenze civili o naturali
+---
 
-    necessità di comunicazioni sicure
+## 🧠 **Motore Unico: ghosttrack.js**
 
-La distro integra strumenti 100% legali, orientati alla difesa, alla resilienza digitale e alla connettività continua, senza includere componenti offensive o potenzialmente illegali.
-2. Filosofia del progetto
+Il file `ghosttrack.js` gestisce:
 
-Civil Resilience OS si basa su quattro principi fondamentali:
-2.1 Sicurezza by Design
+- sistema tab  
+- chat locale  
+- Credito Energetico  
+- API ambientali (Open‑Meteo)  
+- ISS tracker  
+- fase lunare  
+- telemetria locale  
+- Operator Mode  
+- hooks per moduli futuri  
 
-Il sistema è costruito con un approccio “secure-by-default”, includendo:
+È progettato per essere **l’unico cervello** della dashboard.
 
-    cifratura completa del disco
+---
 
-    firewall preconfigurato
+## 🎨 **Tema Premium: ghosttrack.css**
 
-    sandboxing applicativo
+Il tema premium fornisce:
 
-    gestione sicura delle credenziali
+- palette scura  
+- badge di stato  
+- card responsive  
+- layout a griglia  
+- stile operativo “console‑cosmica”  
 
-2.2 Continuità Operativa
+---
 
-La distro è progettata per mantenere la connettività e la funzionalità anche in condizioni avverse, grazie a:
+## 🔑 **Operator Mode**
 
-    hotspot integrato
+La dashboard include una modalità operatore:
 
-    tethering avanzato
+- accesso tramite codice locale  
+- sblocco funzioni avanzate  
+- incremento del Credito Energetico  
+- nessun backend, nessun login esterno  
 
-    reti mesh locali
+È una modalità **simbolica**, narrativa, non legata a identità reali.
 
-    VPN resilienti
+---
 
-    strumenti offline-first
+## ⚡ **Credito Energetico (CE)**
 
-2.3 Resilienza Civile
+Sistema simbolico che misura:
 
-Il sistema include strumenti utili in scenari di emergenza:
+- uptime del nodo  
+- osservazioni registrate  
+- sincronizzazioni mesh  
+- rituali pesanti  
 
-    mappe offline
+Livelli:
 
-    comunicazioni locali senza Internet
+- Seed  
+- Node  
+- Constellation  
+- Mythic  
 
-    sincronizzazione P2P
+Non è una valuta, non è scambiabile, non è finanziaria.
 
-    servizi locali di comunità
+---
 
-2.4 Legalità e Trasparenza
+## 🌍 **Environment & Agro**
 
-Tutti i componenti sono open-source e legalmente utilizzabili.
-Non sono inclusi strumenti di hacking offensivo, cracking o intrusioni.
-3. Architettura del Sistema
+Il nodo può:
 
-Civil Resilience OS è organizzata in moduli funzionali, ognuno dei quali può essere aggiornato o esteso in modo indipendente.
-4. Modulo: CIV-CONNECT (Always-On Connectivity)
+- leggere posizione GPS  
+- interrogare Open‑Meteo  
+- mostrare microclima locale  
+- mostrare qualità dell’aria  
+- integrare sensori futuri  
 
-Il cuore della distro.
-Progettato per garantire la massima probabilità di connessione legale in ogni situazione.
-4.1 Gestione Wi‑Fi avanzata
+---
 
-    auto-scan reti disponibili
+## 🛰 **Space & Astro**
 
-    priorità configurabili (casa → tethering → free Wi‑Fi)
+Moduli inclusi:
 
-    riconoscimento automatico captive portal
+- ISS tracker  
+- fase lunare  
+- link JWST  
+- cartella offline per immagini astronomiche  
 
-4.2 Hotspot personale
+---
 
-    creazione immediata di un access point protetto
+## 🔥 **Sport Hub**
 
-    condivisione connessione via Ethernet, Wi‑Fi o modem
+- video offline (cartella `assets/sport/`)  
+- link ufficiali Red Bull  
+- eventi sportivi  
 
-4.3 Modem e tethering
+---
 
-    supporto completo per chiavette 4G/5G
+## 💬 **Chat Locale**
 
-    tethering USB/Wi‑Fi/Bluetooth
+Chat simulata, offline, utile per:
 
-    rilevamento automatico smartphone come sorgente rete
+- test  
+- log narrativi  
+- interazione locale  
 
-4.4 Reti mesh locali
+---
 
-    supporto B.A.T.M.A.N. o equivalenti
+## 📡 **Telemetria Locale**
 
-    chat locale web
+`telemetry.json` contiene:
 
-    bacheca messaggi offline
+- uptime  
+- carico  
+- disco  
+- rete  
+- batteria  
+- stato mesh  
 
-4.5 VPN e connessioni resilienti
+La dashboard può leggerlo e visualizzarlo.
 
-    profili OpenVPN e WireGuard
+---
 
-    mosh per sessioni stabili anche con rete intermittente
+## 🧪 **Modalità Offline**
 
-5. Modulo: SECURE-CORE (Protezione e Privacy)
-5.1 Sicurezza del dispositivo
+GhostTrack‑v2 funziona **senza internet**.
 
-    cifratura LUKS2
+Per avviarlo in locale su Android:
 
-    firewall nftables
+```bash
+cd ~/GhostTrack-v2/docs
+python3 -m http.server 8080
+```
 
-    sandbox Firejail
+Poi apri:
 
-    password manager offline
+```
+http://localhost:8080/
+```
 
-5.2 Comunicazioni sicure
+---
 
-    Signal Desktop
+## 🛠 **Pipeline DevOps Locale**
 
-    Element (Matrix)
+Lo script:
 
-    Session (opzionale)
+```
+ghosttrack_dev.sh
+```
 
-6. Modulo: FORENSICS & MONITOR (Analisi e Diagnostica)
-6.1 Monitoraggio
+permette di:
 
-    OSQuery
+- aggiungere file  
+- committare  
+- pushare  
+- aggiornare GitHub Pages  
 
-    auditd
+con un solo comando:
 
-    strumenti di log avanzati
+```bash
+./ghosttrack_dev.sh
+```
 
-6.2 Analisi rete
+---
 
-    Wireshark (uso legale)
+## 🔒 **Stato del Progetto**
 
-    tcpdump
+GhostTrack‑v2 è ora:
 
-    nmap per diagnostica interna
+- **completo**  
+- **stabile**  
+- **sigillato**  
+- **operativo**  
+- **offline‑ready**  
+- **senza dipendenze esterne**  
 
-7. Modulo: CIV-TOOLS (Strumenti di Sopravvivenza Digitale)
-7.1 Mappe offline
+Non richiede ulteriori modifiche.
 
-    OpenStreetMap offline
+---
 
-    Marble / OsmAnd Desktop
+## 📜 **Licenza**
 
-7.2 Sincronizzazione e servizi locali
+Uso personale, etico, non commerciale.  
+Nessuna raccolta dati.  
+Nessun tracciamento.  
+Nessun backend.
 
-    Syncthing P2P
+---
 
-    server locale per note e file (Nextcloud locale opzionale)
+## 🌟 **Visione**
 
-7.3 Modalità offline-first
+GhostTrack‑v2 non è un’app.  
+Non è un OS.  
+Non è un servizio.
 
-    email con invio differito
+È un **nodo**.
 
-    repository aggiornamenti offline
-
-8. Scenari d’Uso
-Scenario A – Città con rete disponibile
-
-    connessione automatica a reti fidate
-
-    gestione captive portal
-
-    hotspot per condividere la connessione
-
-Scenario B – Rete instabile
-
-    tethering USB
-
-    modem 4G/5G
-
-    VPN resiliente
-
-    mosh per sessioni persistenti
-
-Scenario C – Nessuna Internet
-
-    rete mesh locale
-
-    chat e bacheca offline
-
-    mappe e documenti offline
-
-    sincronizzazione P2P
-
-9. Legalità e Responsabilità
-
-Civil Resilience OS è progettata per:
-
-    uso civile
-
-    protezione personale
-
-    continuità operativa
-
-    comunicazioni sicure
-
-    resilienza in emergenza
-
-Non include strumenti di attacco, cracking o intrusione.
-L’utente è responsabile dell’uso conforme alle leggi del proprio paese.
-10. Roadmap
-
-    v1.0 – Base system + CIV-CONNECT
-
-    v1.1 – Modulo mesh + mappe offline
-
-    v1.2 – Modulo forensics & monitor
-
-    v1.3 – Documentazione offline integrata
-
-    v2.0 – Versione LTS con supporto esteso
-
-11. Conclusione
-
-GhostTrack v2 OS nasce per offrire una piattaforma robusta, sicura e autonoma, capace di funzionare anche quando le infrastrutture tradizionali falliscono.
-È uno strumento pensato per cittadini, operatori, volontari, tecnici e comunità che vogliono essere preparati a scenari complessi senza violare alcuna legge.
+Un punto nella rete del mondo.  
+Un osservatore silenzioso.  
+Un archivio personale.  
+Una plancia di controllo.  
+Un rituale tecnologico.
+- 
