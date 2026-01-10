@@ -29,3 +29,5 @@ Thumbs.db
 *.tmp
 .cache/
 .eco_token
+.eco_token
+eco_log.py
