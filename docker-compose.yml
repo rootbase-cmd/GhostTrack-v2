@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: gt_api
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./api:/app
+      - ./api/dr_highkali_kg.sqlite:/app/dr_highkali_kg.sqlite
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.nginx
+    container_name: gt_web
+    ports:
+      - "8000:80"
+    depends_on:
+      - api

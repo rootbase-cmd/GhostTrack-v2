@@ -1,0 +1,6 @@
+body{font-family:system-ui,Segoe UI,Roboto,Arial;background:#0f1720;color:#e6eef8;padding:18px}
+.card{background:#0b1220;border:1px solid #1f2a3a;padding:14px;border-radius:8px;margin-bottom:12px}
+h1{margin:0 0 8px 0;font-size:20px}
+pre{background:#07101a;padding:12px;border-radius:6px;overflow:auto}
+.btn{display:inline-block;padding:8px 12px;border-radius:6px;background:#1f6feb;color:white;text-decoration:none}
+.muted{color:#9fb0c8;font-size:13px}
