@@ -1,31 +1,18 @@
-name: GhostTrack AutoDeploy
-
+name: Deploy Pages
 on:
   push:
     branches:
       - main
-      - feature/initial-mvp
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Sync static → docs
-        run: |
-          rsync -a --delete webapp/static/ docs/
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add docs || true
-          git commit -m "AutoSync: update docs from static" || true
-
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.8.0
+      - uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload to Pages
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          path: docs
+      - name: Deploy
+        uses: actions/deploy-pages@v1
