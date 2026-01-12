@@ -1,0 +1,17 @@
+{
+  "node": {
+    "uptime": "24512",
+    "load": "0.31",
+    "disk_used": "14%",
+    "ip": "192.168.1.50",
+    "battery": "92%",
+    "network": "WiFi",
+    "mesh_status": "active"
+  },
+  "environment": {
+    "temperature": "11.8",
+    "humidity": "71",
+    "pressure": "1014",
+    "wind": "3.8"
+  }
+}

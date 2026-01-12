@@ -1,0 +1,171 @@
+<div class="gt-dashboard">
+
+  <!-- HEADER PRINCIPALE -->
+  <section class="gt-section gt-section-main">
+    <h1>GhostTrack Console</h1>
+    <p class="gt-subtitle">
+      Costellazione operativa · Versione 3.0 · Nodo locale
+    </p>
+
+    <div class="gt-status-row">
+
+      <!-- STATO API -->
+      <div class="gt-status-card" id="gt-api-status-card">
+        <h2>Stato API</h2>
+        <p class="gt-status-line">
+          <span class="gt-pill" id="gt-api-pill">SENSORE</span>
+          <span id="gt-api-status-text">In attesa…</span>
+        </p>
+        <p class="gt-status-meta" id="gt-api-meta"></p>
+      </div>
+
+      <!-- AMBIENTE -->
+      <div class="gt-status-card">
+        <h2>Ambiente</h2>
+        <p class="gt-status-line">
+          <span class="gt-pill gt-pill-env" id="gt-env-pill">Sconosciuto</span>
+        </p>
+        <ul class="gt-meta-list">
+          <li><strong>Host:</strong> <span id="gt-env-host"></span></li>
+          <li><strong>Base API:</strong> <span id="gt-env-base-url"></span></li>
+        </ul>
+      </div>
+
+      <!-- DOCUMENTAZIONE -->
+      <div class="gt-status-card">
+        <h2>Documentazione</h2>
+        <ul class="gt-meta-list">
+          <li><a href="/docs/INDEX.md" target="_blank">Indice Documentazione</a></li>
+          <li><a href="/docs/EXECUTIVE_REPORT.md" target="_blank">Executive Report</a></li>
+          <li><a href="/docs/ROADMAP.md" target="_blank">Roadmap Operativa</a></li>
+        </ul>
+        <p class="gt-status-meta">
+          Se un link è 404, il modulo documentale non è stato ancora materializzato.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COSTELLAZIONE MODULI -->
+  <section class="gt-section">
+    <h2>Costellazione Moduli</h2>
+    <p class="gt-section-desc">
+      Ogni modulo è un dominio operativo. La dashboard mostra lo stato sintetico e ti permette di entrare nel pannello dedicato.
+    </p>
+
+    <div class="gt-modules-grid">
+
+      <!-- CYBERDEFENSE -->
+      <article class="gt-module-card" data-panel="cyberdefense">
+        <h3>CyberDefense</h3>
+        <p class="gt-module-tagline">Superficie di attacco, allarmi, difesa attiva.</p>
+        <ul class="gt-module-meta">
+          <li><strong>Stato:</strong> <span class="gt-chip">In attesa</span></li>
+        </ul>
+        <button class="gt-btn" onclick="gtOpenPanel('cyberdefense')">Apri pannello</button>
+      </article>
+
+      <!-- ORBITAL & SPACE -->
+      <article class="gt-module-card" data-panel="orbital_space">
+        <h3>Orbital & Space</h3>
+        <p class="gt-module-tagline">Orbite, feed satellitari, spazio vicino.</p>
+        <ul class="gt-module-meta">
+          <li><strong>Stato:</strong> <span class="gt-chip">In attesa</span></li>
+        </ul>
+        <button class="gt-btn" onclick="gtOpenPanel('orbital_space')">Apri pannello</button>
+      </article>
+
+      <!-- AGRO & AMBIENTE -->
+      <article class="gt-module-card" data-panel="agro_ambiente">
+        <h3>Agro & Ambiente</h3>
+        <p class="gt-module-tagline">Sensori locali, meteo, territorio, suolo.</p>
+        <ul class="gt-module-meta">
+          <li><strong>Stato:</strong> <span class="gt-chip">In attesa</span></li>
+        </ul>
+        <button class="gt-btn" onclick="gtOpenPanel('agro_ambiente')">Apri pannello</button>
+      </article>
+
+      <!-- RESILIENZA -->
+      <article class="gt-module-card" data-panel="resilienza">
+        <h3>Resilienza & Emergenza</h3>
+        <p class="gt-module-tagline">Continuità operativa, allarmi, piani B.</p>
+        <ul class="gt-module-meta">
+          <li><strong>Stato:</strong> <span class="gt-chip">In attesa</span></li>
+        </ul>
+        <button class="gt-btn" onclick="gtOpenPanel('resilienza')">Apri pannello</button>
+      </article>
+
+      <!-- RETI & MESH -->
+      <article class="gt-module-card" data-panel="reti_mesh">
+        <h3>Reti & Mesh</h3>
+        <p class="gt-module-tagline">Topologia, link radio, percorsi.</p>
+        <ul class="gt-module-meta">
+          <li><strong>Stato:</strong> <span class="gt-chip">In attesa</span></li>
+        </ul>
+        <button class="gt-btn" onclick="gtOpenPanel('reti_mesh')">Apri pannello</button>
+      </article>
+
+      <!-- AI & ANALISI -->
+      <article class="gt-module-card" data-panel="ai_analisi">
+        <h3>AI & Analisi</h3>
+        <p class="gt-module-tagline">Inferenze, correlazioni, scenari.</p>
+        <ul class="gt-module-meta">
+          <li><strong>Stato:</strong> <span class="gt-chip">In attesa</span></li>
+        </ul>
+        <button class="gt-btn" onclick="gtOpenPanel('ai_analisi')">Apri pannello</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LOG OPERATIVO -->
+  <section class="gt-section">
+    <h2>Log operativo locale</h2>
+    <pre class="gt-log-box" id="gt-local-log">
+[GhostTrack] Console avviata.
+[GhostTrack] In attesa aggiornamento sensori…
+    </pre>
+  </section>
+
+</div>
+
+<!-- ENGINE DINAMICO -->
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+
+    const config = await fetch("config.json").then(r => r.json());
+    const baseUrl = resolveApiBaseUrl(config);
+
+    await gtLoadSensors();
+
+    const modules = [
+        "cyberdefense",
+        "orbital_space",
+        "agro_ambiente",
+        "resilienza",
+        "reti_mesh",
+        "ai_analisi"
+    ];
+
+    for (const mod of modules) {
+        const card = document.querySelector(`[data-panel="${mod}"]`);
+        if (!card) continue;
+
+        const chip = card.querySelector(".gt-chip");
+        if (!chip) continue;
+
+        const status = await gtCheckModuleStatus(mod, baseUrl);
+
+        if (!status || status.status === "offline") {
+            chip.classList.remove("gt-chip-on");
+            chip.classList.add("gt-chip-off");
+            chip.textContent = "Offline";
+        } else {
+            chip.classList.remove("gt-chip-off");
+            chip.classList.add("gt-chip-on");
+            chip.textContent = "Online";
+        }
+    }
+});
+</script>

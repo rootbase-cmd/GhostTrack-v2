@@ -1,234 +1,163 @@
-# 🐺 GHOSTTRACK  
-**La rinascita dello spirito BackTrack.  
-Un framework rituale, modulare e operativo.**
+# 🌍 GhostTrack‑v2
 
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Build](https://img.shields.io/badge/Build-GhostOps-black)]()
-[![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-blue)]()
-[![Identity](https://img.shields.io/badge/Identity-BackTrack%20Reborn-red)]()
+**GhostTrack‑v2** è una costellazione etica di nodi di osservazione distribuiti.  
+Ogni nodo è un laboratorio vivente che combina:
 
+- 🌐 CyberDefense  
+- 🛰 Orbital & Space  
+- 🌾 Agro & Ambiente  
+- 📡 Radio & SDR  
+- 🌍 Reti & Mesh  
+- 🧠 AI & Analisi  
+- 🧪 Sperimentazione  
 
-📄 Whitepaper / README – Civil Resilience OS
-Titolo:
+Il progetto è pensato per essere **etico, educativo, documentato e resiliente**.
 
-Civil Resilience GhostTrack v2 – Piattaforma Operativa per Sicurezza, Continuità e Connettività in Scenari Critici
-1. Introduzione
+---
 
-Civil Resilience OS è una distribuzione Linux progettata per garantire sicurezza, autonomia e continuità operativa in contesti civili, professionali e di emergenza.
-L’obiettivo è fornire un ambiente affidabile che rimanga funzionale anche in condizioni di:
+## 🛰 Visione
 
-    rete instabile o assente
+GhostTrack‑v2 nasce per:
 
-    blackout prolungati
+- osservare territorio, infrastrutture e ambiente in modo rispettoso  
+- sperimentare nuove forme di resilienza digitale  
+- offrire strumenti modulari per ricerca, studio e divulgazione  
+- creare un linguaggio comune tra nodi, sensori, radio, reti e AI  
 
-    crisi infrastrutturali
+---
 
-    emergenze civili o naturali
+## 🧱 Architettura ad alto livello
 
-    necessità di comunicazioni sicure
+```text
+                   ┌──────────────────────────┐
+                   │      GhostTrack‑v2       │
+                   │  Nodo di Osservazione    │
+                   └─────────────┬────────────┘
+                                 │
+     ┌───────────────────────────┼───────────────────────────┐
+     │                           │                           │
+     ▼                           ▼                           ▼
+┌──────────┐              ┌──────────┐               ┌──────────┐
+│ Telemetria│             │  Moduli  │               │  Rituali │
+└─────┬────┘              └────┬─────┘               └────┬─────┘
+      │                         │                           │
+      ▼                         ▼                           ▼
+  Sistema Core           Domini Funzionali            Operazioni
 
-La distro integra strumenti 100% legali, orientati alla difesa, alla resilienza digitale e alla connettività continua, senza includere componenti offensive o potenzialmente illegali.
-2. Filosofia del progetto
+---
 
-Civil Resilience OS si basa su quattro principi fondamentali:
-2.1 Sicurezza by Design
+## 4. `docs/ROADMAP.md` — Roadmap professionale
 
-Il sistema è costruito con un approccio “secure-by-default”, includendo:
+```bash
+cat > docs/ROADMAP.md << 'EOF'
+# 🗺 GhostTrack‑v2 — Roadmap Evolutiva
 
-    cifratura completa del disco
+Questa roadmap descrive l'evoluzione prevista del progetto, in modo trasparente e tracciabile.
 
-    firewall preconfigurato
+---
 
-    sandboxing applicativo
+## ✅ Fase 1 — Fondamenta (completata / in corso)
 
-    gestione sicura delle credenziali
+- Strutturazione dei 18 domini funzionali  
+- WebApp con pannelli modulari per ogni componente  
+- API backend base (status, crediti, moduli principali)  
+- Documentazione tecnica (Wiki)  
+- Executive overview per enti e partner  
 
-2.2 Continuità Operativa
+---
 
-La distro è progettata per mantenere la connettività e la funzionalità anche in condizioni avverse, grazie a:
+## 🚀 Fase 2 — Attivazione moduli chiave
 
-    hotspot integrato
+**Obiettivi:**
 
-    tethering avanzato
+- Attivare dati reali o simulati per:
+  - Orbital & Space (telemetria di base, TLE)  
+  - Agro & Ambiente (microclima locale, sensori se presenti)  
+  - Performance (profilazione nodo, “RedBull Mode” simbolica)  
+  - Crediti energetici (wallet logico, con eventi e storia)  
 
-    reti mesh locali
+**Deliverable:**
 
-    VPN resilienti
+- Endpoint API dedicati per ciascun modulo attivo  
+- Pannelli WebApp con dati aggiornati e leggibili  
+- Sezione Wiki: “Stato attuale dei moduli attivi”  
 
-    strumenti offline-first
+---
 
-2.3 Resilienza Civile
+## 🌐 Fase 3 — Reti, Mesh e Resilienza
 
-Il sistema include strumenti utili in scenari di emergenza:
+**Obiettivi:**
 
-    mappe offline
+- Introdurre logica di:
+  - Multi‑WAN (anche solo come concetto/monitoring)  
+  - Mesh networking (documentato e, dove possibile, sperimentato)  
+  - Watchdog & FailSafe (script di controllo di base)  
 
-    comunicazioni locali senza Internet
+**Deliverable:**
 
-    sincronizzazione P2P
+- Pannelli per:
+  - MeshNode, LinkWatch, NetPulse  
+  - Watchdog Engine, FailSafe, RecoveryNode  
+- Documentazione d’uso per nodi remoti/secondari  
 
-    servizi locali di comunità
+---
 
-2.4 Legalità e Trasparenza
+## 📡 Fase 4 — Radio & SDR (opzionale, dipende dall’hardware)
 
-Tutti i componenti sono open-source e legalmente utilizzabili.
-Non sono inclusi strumenti di hacking offensivo, cracking o intrusioni.
-3. Architettura del Sistema
+**Obiettivi:**
 
-Civil Resilience OS è organizzata in moduli funzionali, ognuno dei quali può essere aggiornato o esteso in modo indipendente.
-4. Modulo: CIV-CONNECT (Always-On Connectivity)
+- Integrare strumenti SDR se disponibili  
+- Visualizzare spettro e segnali (anche offline / sample)  
 
-Il cuore della distro.
-Progettato per garantire la massima probabilità di connessione legale in ogni situazione.
-4.1 Gestione Wi‑Fi avanzata
+**Deliverable:**
 
-    auto-scan reti disponibili
+- Pannelli RadioScan, SDRWatch, Spectrum Analyzer attivi  
+- Esempi di flussi dati o demo registrate  
 
-    priorità configurabili (casa → tethering → free Wi‑Fi)
+---
 
-    riconoscimento automatico captive portal
+## 🧠 Fase 5 — AI & Analisi locale
 
-4.2 Hotspot personale
+**Obiettivi:**
 
-    creazione immediata di un access point protetto
+- Aggiungere moduli AI locale leggera (dove possibile)  
+- Pattern detection, anomalie base, predizioni semplici  
 
-    condivisione connessione via Ethernet, Wi‑Fi o modem
+**Deliverable:**
 
-4.3 Modem e tethering
+- Endpoint AI locali di esempio  
+- Pannelli LocalAI, PatternEngine, AnomalyAI con dati o simulazioni  
 
-    supporto completo per chiavette 4G/5G
+---
 
-    tethering USB/Wi‑Fi/Bluetooth
+## 🧪 Fase 6 — Protocollo Lab
 
-    rilevamento automatico smartphone come sorgente rete
+**Obiettivi:**
 
-4.4 Reti mesh locali
+- Definire GhostTrack‑Lab come:
+  - spazio di test  
+  - raccolta di esperimenti  
+  - playground controllato  
 
-    supporto B.A.T.M.A.N. o equivalenti
+**Deliverable:**
 
-    chat locale web
+- Documentazione su come proporre/aggiungere esperimenti  
+- Pannelli ProtoNode, SensorForge, Experimental Mesh con setup base  
 
-    bacheca messaggi offline
+---
 
-4.5 VPN e connessioni resilienti
+## 🔍 Trasparenza sullo stato
 
-    profili OpenVPN e WireGuard
+Per ogni modulo, la Wiki riporterà:
 
-    mosh per sessioni stabili anche con rete intermittente
+- **Stato:**  
+  - “Attivo”  
+  - “Simulato”  
+  - “In sviluppo”  
+  - “Concetto / Roadmap”  
 
-5. Modulo: SECURE-CORE (Protezione e Privacy)
-5.1 Sicurezza del dispositivo
+- **Livello di integrazione:**  
+  - solo UI  
+  - UI + API mock  
+  - UI + API reali + sensori  
 
-    cifratura LUKS2
-
-    firewall nftables
-
-    sandbox Firejail
-
-    password manager offline
-
-5.2 Comunicazioni sicure
-
-    Signal Desktop
-
-    Element (Matrix)
-
-    Session (opzionale)
-
-6. Modulo: FORENSICS & MONITOR (Analisi e Diagnostica)
-6.1 Monitoraggio
-
-    OSQuery
-
-    auditd
-
-    strumenti di log avanzati
-
-6.2 Analisi rete
-
-    Wireshark (uso legale)
-
-    tcpdump
-
-    nmap per diagnostica interna
-
-7. Modulo: CIV-TOOLS (Strumenti di Sopravvivenza Digitale)
-7.1 Mappe offline
-
-    OpenStreetMap offline
-
-    Marble / OsmAnd Desktop
-
-7.2 Sincronizzazione e servizi locali
-
-    Syncthing P2P
-
-    server locale per note e file (Nextcloud locale opzionale)
-
-7.3 Modalità offline-first
-
-    email con invio differito
-
-    repository aggiornamenti offline
-
-8. Scenari d’Uso
-Scenario A – Città con rete disponibile
-
-    connessione automatica a reti fidate
-
-    gestione captive portal
-
-    hotspot per condividere la connessione
-
-Scenario B – Rete instabile
-
-    tethering USB
-
-    modem 4G/5G
-
-    VPN resiliente
-
-    mosh per sessioni persistenti
-
-Scenario C – Nessuna Internet
-
-    rete mesh locale
-
-    chat e bacheca offline
-
-    mappe e documenti offline
-
-    sincronizzazione P2P
-
-9. Legalità e Responsabilità
-
-Civil Resilience OS è progettata per:
-
-    uso civile
-
-    protezione personale
-
-    continuità operativa
-
-    comunicazioni sicure
-
-    resilienza in emergenza
-
-Non include strumenti di attacco, cracking o intrusione.
-L’utente è responsabile dell’uso conforme alle leggi del proprio paese.
-10. Roadmap
-
-    v1.0 – Base system + CIV-CONNECT
-
-    v1.1 – Modulo mesh + mappe offline
-
-    v1.2 – Modulo forensics & monitor
-
-    v1.3 – Documentazione offline integrata
-
-    v2.0 – Versione LTS con supporto esteso
-
-11. Conclusione
-
-GhostTrack v2 OS nasce per offrire una piattaforma robusta, sicura e autonoma, capace di funzionare anche quando le infrastrutture tradizionali falliscono.
-È uno strumento pensato per cittadini, operatori, volontari, tecnici e comunità che vogliono essere preparati a scenari complessi senza violare alcuna legge.

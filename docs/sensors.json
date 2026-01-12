@@ -1,0 +1,48 @@
+{
+  "service": "GhostTrack Sensors Registry",
+  "version": "1.0",
+  "modules": {
+    "cyberdefense": {
+      "description": "Superficie di attacco, allarmi, difesa attiva.",
+      "protocols": ["http"],
+      "sensors": [
+        { "id": "cyberdefense_uptime", "type": "http", "endpoint": "/api/cyberdefense/status" }
+      ]
+    },
+    "orbital_space": {
+      "description": "Orbite, feed satellitari, spazio vicino.",
+      "protocols": ["http", "https"],
+      "sensors": [
+        { "id": "orbital_space_status", "type": "http", "endpoint": "/api/orbital_space/status" }
+      ]
+    },
+    "agro_ambiente": {
+      "description": "Sensori locali, meteo, territorio, suolo.",
+      "protocols": ["http", "mqtt"],
+      "sensors": [
+        { "id": "agro_env_status", "type": "http", "endpoint": "/api/agro_ambiente/status" }
+      ]
+    },
+    "resilienza": {
+      "description": "Continuità operativa, allarmi, piani B.",
+      "protocols": ["http"],
+      "sensors": [
+        { "id": "resilience_core", "type": "http", "endpoint": "/api/resilienza/status" }
+      ]
+    },
+    "reti_mesh": {
+      "description": "Topologia, link radio, percorsi.",
+      "protocols": ["http", "icmp"],
+      "sensors": [
+        { "id": "network_topology_status", "type": "http", "endpoint": "/api/reti_mesh/status" }
+      ]
+    },
+    "ai_analisi": {
+      "description": "Inferenze, correlazioni, scenari.",
+      "protocols": ["http"],
+      "sensors": [
+        { "id": "ai_analysis_status", "type": "http", "endpoint": "/api/ai_analisi/status" }
+      ]
+    }
+  }
+}
