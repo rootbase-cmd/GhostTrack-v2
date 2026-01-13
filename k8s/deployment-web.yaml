@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dr-highkali-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dr-highkali-web
+  template:
+    metadata:
+      labels:
+        app: dr-highkali-web
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/yourorg/dr-highkali-web:latest
+          ports:
+            - containerPort: 80

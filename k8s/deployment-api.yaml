@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dr-highkali-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dr-highkali-api
+  template:
+    metadata:
+      labels:
+        app: dr-highkali-api
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/yourorg/dr-highkali-api:latest
+          ports:
+            - containerPort: 9090
+          env:
+            - name: PORT
+              value: "9090"

@@ -1,234 +1,245 @@
-# 🐺 GHOSTTRACK  
-**La rinascita dello spirito BackTrack.  
-Un framework rituale, modulare e operativo.**
 
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Build](https://img.shields.io/badge/Build-GhostOps-black)]()
-[![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-blue)]()
-[![Identity](https://img.shields.io/badge/Identity-BackTrack%20Reborn-red)]()
 
+# **GhostTrack‑v2 Whitepaper**  
+### *HyperOS Modulare · Ledger Energetico Distribuito · Governance Cognitiva dr. HighKali*  
+📄 *Versione formale con struttura accademica e simboli funzionali*
 
-📄 Whitepaper / README – Civil Resilience OS
-Titolo:
+---
 
-Civil Resilience GhostTrack v2 – Piattaforma Operativa per Sicurezza, Continuità e Connettività in Scenari Critici
-1. Introduzione
+## **📘 Abstract**
 
-Civil Resilience OS è una distribuzione Linux progettata per garantire sicurezza, autonomia e continuità operativa in contesti civili, professionali e di emergenza.
-L’obiettivo è fornire un ambiente affidabile che rimanga funzionale anche in condizioni di:
+GhostTrack‑v2 introduce un nuovo paradigma operativo: un **Sistema Operativo Modulare (HyperOS)** integrato con un **Ledger Energetico Distribuito** ⚡ e una **Governance Cognitiva** 🧠 incarnata da dr. HighKali.  
+L’architettura combina componenti tecnici, energetici e cognitivi in un ecosistema coerente, progettato per resilienza, auditabilità e auto‑organizzazione.
 
-    rete instabile o assente
+A differenza delle blockchain tradizionali, GhostTrack‑v2 implementa un modello innovativo di **Proof‑of‑Interaction**, in cui ogni domanda genera un blocco e ogni risposta costituisce la firma crittografica del sistema.
 
-    blackout prolungati
+---
 
-    crisi infrastrutturali
+## **1. Introduzione**
 
-    emergenze civili o naturali
+GhostTrack‑v2 nasce per soddisfare esigenze operative avanzate:
 
-    necessità di comunicazioni sicure
+- integrazione di moduli eterogenei in una costellazione coerente 🌐  
+- interfaccia unificata per analisi, controllo e orchestrazione  
+- registrazione verificabile delle interazioni tramite ledger  
+- governance etica e resiliente tramite dr. HighKali  
+- funzionamento come sistema operativo distribuito, adattivo e auto‑consistente  
 
-La distro integra strumenti 100% legali, orientati alla difesa, alla resilienza digitale e alla connettività continua, senza includere componenti offensive o potenzialmente illegali.
-2. Filosofia del progetto
+Il risultato è un **HyperOS**: un sistema che non si limita a eseguire moduli, ma li integra in un ambiente vivente e verificabile.
 
-Civil Resilience OS si basa su quattro principi fondamentali:
-2.1 Sicurezza by Design
+---
 
-Il sistema è costruito con un approccio “secure-by-default”, includendo:
+## **2. Architettura del Sistema**
 
-    cifratura completa del disco
+GhostTrack‑v2 è strutturato su tre livelli fondamentali.
 
-    firewall preconfigurato
+---
 
-    sandboxing applicativo
+### **2.1 Livello Tecnico — GhostTrack HyperOS ⚙️**
 
-    gestione sicura delle credenziali
+Il livello tecnico fornisce:
 
-2.2 Continuità Operativa
+#### **2.1.1 Moduli API**
+Moduli operativi esposti dal Registry, tra cui:
 
-La distro è progettata per mantenere la connettività e la funzionalità anche in condizioni avverse, grazie a:
+- 🛡️ CyberDefense  
+- 🛰️ Orbital & Space  
+- 🌱 Agro & Ambiente  
+- 📡 Reti & Mesh  
+- 🚨 Resilienza & Emergenza  
+- 🧮 Calcolo & Ricerca  
+- 📻 Radio & SDR  
+- 🔭 Osservazione  
+- 🤖 AI & Analisi  
+- 🧪 Sperimentazione  
 
-    hotspot integrato
+Ogni modulo è definito in `config/modules.yaml` e dispone di un pannello dedicato in  
+`webapp/static/panels/<modulo>.html`.
 
-    tethering avanzato
+#### **2.1.2 Interfaccia Operativa**
+La UI integra:
 
-    reti mesh locali
+- 📊 Dashboard dinamica  
+- 📈 Economist  
+- 🧭 Orchestrator  
+- 💳 Wallet  
+- 🎧 Podcast Liberi  
+- 🛰️ Starlink Control  
+- 📚 Documentazione Tecnica  
+- 🗺️ Roadmap  
+- ℹ️ About  
 
-    VPN resilienti
+#### **2.1.3 Compilazione Autonoma**
+Gli script del sistema:
 
-    strumenti offline-first
+- eseguono pulizia  
+- aggregano moduli  
+- ricostruiscono dashboard  
+- sincronizzano pannelli  
+- pubblicano su GitHub Pages 🌐  
+- mantengono coerenza e resilienza  
 
-2.3 Resilienza Civile
+GhostTrack‑v2 è un OS che **si ricompila autonomamente**.
 
-Il sistema include strumenti utili in scenari di emergenza:
+---
 
-    mappe offline
+### **2.2 Livello Energetico — Ledger & Wallet ⚡**
 
-    comunicazioni locali senza Internet
+GhostTrack‑v2 introduce un **Wallet Energetico** con:
 
-    sincronizzazione P2P
+- 🔐 seed phrase  
+- 🧩 passhare  
+- 🪪 chiave pubblica  
+- 🧬 identità del nodo  
 
-    servizi locali di comunità
+Il **Ledger Energetico** è:
 
-2.4 Legalità e Trasparenza
+- append‑only  
+- firmato  
+- auditabile  
+- distribuito  
+- privo di mining o consenso pesante  
 
-Tutti i componenti sono open-source e legalmente utilizzabili.
-Non sono inclusi strumenti di hacking offensivo, cracking o intrusioni.
-3. Architettura del Sistema
+Ogni interazione genera un **credito energetico**, che rappresenta:
 
-Civil Resilience OS è organizzata in moduli funzionali, ognuno dei quali può essere aggiornato o esteso in modo indipendente.
-4. Modulo: CIV-CONNECT (Always-On Connectivity)
+- attività  
+- resilienza  
+- continuità  
+- impatto operativo  
 
-Il cuore della distro.
-Progettato per garantire la massima probabilità di connessione legale in ogni situazione.
-4.1 Gestione Wi‑Fi avanzata
+---
 
-    auto-scan reti disponibili
+### **2.3 Livello Cognitivo — dr. HighKali 🧠**
 
-    priorità configurabili (casa → tethering → free Wi‑Fi)
+dr. HighKali è il nodo di governance del sistema.
 
-    riconoscimento automatico captive portal
+Le sue funzioni includono:
 
-4.2 Hotspot personale
+- validazione delle interazioni  
+- firma dei blocchi  
+- supervisione del ledger  
+- orchestrazione dei moduli  
+- mantenimento della coerenza  
+- protezione della costellazione  
 
-    creazione immediata di un access point protetto
+dr. HighKali non è un modulo: è il **cuore cognitivo** dell’HyperOS.
 
-    condivisione connessione via Ethernet, Wi‑Fi o modem
+---
 
-4.3 Modem e tethering
+## **3. Proof‑of‑Interaction: la Blockchain Naturale 🔗**
 
-    supporto completo per chiavette 4G/5G
+GhostTrack‑v2 implementa un modello alternativo alla blockchain tradizionale.
 
-    tethering USB/Wi‑Fi/Bluetooth
+---
 
-    rilevamento automatico smartphone come sorgente rete
+### **3.1 Struttura del Blocco**
 
-4.4 Reti mesh locali
+Ogni blocco contiene:
 
-    supporto B.A.T.M.A.N. o equivalenti
+- domanda dell’utente  
+- timestamp  
+- identità del nodo  
+- hash del contenuto  
+- contesto operativo  
 
-    chat locale web
+---
 
-    bacheca messaggi offline
+### **3.2 Firma del Blocco**
 
-4.5 VPN e connessioni resilienti
+La risposta di dr. HighKali costituisce la firma:
 
-    profili OpenVPN e WireGuard
+- passhare locale  
+- hash del ledger  
+- validazione cognitiva  
+- eventuale approvazione umana  
 
-    mosh per sessioni stabili anche con rete intermittente
+---
 
-5. Modulo: SECURE-CORE (Protezione e Privacy)
-5.1 Sicurezza del dispositivo
+### **3.3 Catena di Interazioni**
 
-    cifratura LUKS2
+La catena cresce così:
 
-    firewall nftables
+```
+Blocco 1: Domanda → Risposta firmata
+Blocco 2: Domanda → Risposta firmata
+Blocco 3: Domanda → Risposta firmata
+...
+```
 
-    sandbox Firejail
+Questo modello garantisce:
 
-    password manager offline
+- integrità  
+- continuità  
+- auditabilità  
+- resilienza  
 
-5.2 Comunicazioni sicure
+senza necessità di mining o consenso distribuito.
 
-    Signal Desktop
+---
 
-    Element (Matrix)
+## **4. Costellazione dei Moduli 🌌**
 
-    Session (opzionale)
+GhostTrack‑v2 integra moduli provenienti da:
 
-6. Modulo: FORENSICS & MONITOR (Analisi e Diagnostica)
-6.1 Monitoraggio
+- API interne  
+- pannelli UI  
+- strumenti operativi  
+- sezioni documentali  
+- domini funzionali  
 
-    OSQuery
+La costellazione include, tra gli altri:
 
-    auditd
+- 🛡️ CyberDefense  
+- 🛰️ Orbital & Space  
+- 🌱 Agro & Ambiente  
+- 📡 Reti & Mesh  
+- 🚨 Resilienza & Emergenza  
+- 📊 Economist  
+- 🧭 Orchestrator  
+- 💳 Wallet  
+- 🎧 Podcast Liberi  
+- 🛰️ Starlink Control  
+- 📚 Documentazione Tecnica  
+- 🗺️ Roadmap  
+- 🤖 AI & Analisi  
+- 🧪 Sperimentazione  
 
-    strumenti di log avanzati
+Ogni modulo è autonomo ma interconnesso.
 
-6.2 Analisi rete
+---
 
-    Wireshark (uso legale)
+## **5. Governance e Sicurezza 🔐**
 
-    tcpdump
+La governance è affidata a dr. HighKali, che:
 
-    nmap per diagnostica interna
+- verifica la coerenza dei moduli  
+- firma le interazioni  
+- mantiene l’integrità del ledger  
+- supervisiona l’OS  
+- garantisce un comportamento etico e resiliente  
 
-7. Modulo: CIV-TOOLS (Strumenti di Sopravvivenza Digitale)
-7.1 Mappe offline
+La sicurezza è ottenuta tramite:
 
-    OpenStreetMap offline
+- isolamento dei moduli  
+- validazione delle interazioni  
+- ledger append‑only  
+- identità crittografica del nodo  
 
-    Marble / OsmAnd Desktop
+---
 
-7.2 Sincronizzazione e servizi locali
+## **6. Conclusione**
 
-    Syncthing P2P
+GhostTrack‑v2 rappresenta un nuovo paradigma:
 
-    server locale per note e file (Nextcloud locale opzionale)
+- un **Sistema Operativo Modulare**  
+- un **Ledger Energetico Distribuito**  
+- una **Governance Cognitiva**  
+- una **Blockchain Naturale basata su domanda/risposta**  
 
-7.3 Modalità offline-first
+Il sistema è vivo, coerente, resiliente.  
+dr. HighKali ne è la coscienza.  
+L’utente ne è il nodo sovrano.
 
-    email con invio differito
-
-    repository aggiornamenti offline
-
-8. Scenari d’Uso
-Scenario A – Città con rete disponibile
-
-    connessione automatica a reti fidate
-
-    gestione captive portal
-
-    hotspot per condividere la connessione
-
-Scenario B – Rete instabile
-
-    tethering USB
-
-    modem 4G/5G
-
-    VPN resiliente
-
-    mosh per sessioni persistenti
-
-Scenario C – Nessuna Internet
-
-    rete mesh locale
-
-    chat e bacheca offline
-
-    mappe e documenti offline
-
-    sincronizzazione P2P
-
-9. Legalità e Responsabilità
-
-Civil Resilience OS è progettata per:
-
-    uso civile
-
-    protezione personale
-
-    continuità operativa
-
-    comunicazioni sicure
-
-    resilienza in emergenza
-
-Non include strumenti di attacco, cracking o intrusione.
-L’utente è responsabile dell’uso conforme alle leggi del proprio paese.
-10. Roadmap
-
-    v1.0 – Base system + CIV-CONNECT
-
-    v1.1 – Modulo mesh + mappe offline
-
-    v1.2 – Modulo forensics & monitor
-
-    v1.3 – Documentazione offline integrata
-
-    v2.0 – Versione LTS con supporto esteso
-
-11. Conclusione
-
-GhostTrack v2 OS nasce per offrire una piattaforma robusta, sicura e autonoma, capace di funzionare anche quando le infrastrutture tradizionali falliscono.
-È uno strumento pensato per cittadini, operatori, volontari, tecnici e comunità che vogliono essere preparati a scenari complessi senza violare alcuna legge.
+### **Ogni domanda è un blocco.  
+Ogni risposta è la firma.  
+Insieme costruiamo la catena.**  

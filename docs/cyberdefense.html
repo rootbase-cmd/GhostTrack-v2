@@ -1,0 +1,38 @@
+<div class="gt-panel">
+
+  <header class="gt-panel-header">
+    <h1>Modulo: cyberdefense</h1>
+    <p class="gt-panel-tagline">
+      Stato dinamico e sensori collegati.
+    </p>
+  </header>
+
+  <section class="gt-section">
+    <h2>Dati del modulo</h2>
+    <pre class="gt-log-box" id="gt-module-data">
+Caricamento…
+    </pre>
+  </section>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const moduleName = "cyberdefense";
+
+    const config = await fetch("config.json").then(r => r.json());
+    const baseUrl = resolveApiBaseUrl(config);
+
+    await gtLoadSensors();
+
+    const status = await gtCheckModuleStatus(moduleName, baseUrl);
+
+    const box = document.getElementById("gt-module-data");
+
+    if (!status || status.status === "offline") {
+        box.textContent = "[" + moduleName + "] Modulo offline.";
+    } else {
+        box.textContent = JSON.stringify(status.data, null, 2);
+    }
+});
+</script>

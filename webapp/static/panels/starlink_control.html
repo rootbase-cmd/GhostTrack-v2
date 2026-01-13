@@ -1,0 +1,51 @@
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <div class="panel-title">Starlink Control</div>
+      <div class="panel-subtitle">Telemetria reale, mappa ed energia ibrida</div>
+    </div>
+    <div style="display:flex; gap:6px;">
+      <button id="starlink-refresh" class="podcast-actions-button">Aggiorna</button>
+      <button id="starlink-mode-boost" class="podcast-actions-button">Boost</button>
+      <button id="starlink-mode-save" class="podcast-actions-button">Power Save</button>
+    </div>
+  </div>
+  <div class="starlink-layout">
+    <div class="starlink-subpanel">
+      <div class="starlink-subtitle">Telemetria link</div>
+      <div class="panel-grid">
+        <div class="stat-card">
+          <div class="stat-label">Latenza</div>
+          <div class="stat-value" id="starlink-latency">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Download</div>
+          <div class="stat-value" id="starlink-download">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Upload</div>
+          <div class="stat-value" id="starlink-upload">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Uptime</div>
+          <div class="stat-value" id="starlink-uptime">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Crediti energetici</div>
+          <div class="stat-value" id="starlink-credits">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Modalità</div>
+          <div class="stat-value" id="starlink-mode">-</div>
+        </div>
+      </div>
+    </div>
+    <div class="starlink-subpanel">
+      <div class="starlink-subtitle">Mappa costellazione e previsioni</div>
+      <div class="starlink-map" id="starlink-map"></div>
+      <div style="margin-top:8px; font-size:11px; color:#9a9ab3;">
+        Agganciabile a dati TLE reali e previsioni di visibilità satelliti.
+      </div>
+    </div>
+  </div>
+</div>

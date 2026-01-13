@@ -1,0 +1,289 @@
+
+agro_ambiente:
+  label: "Agro & Ambiente"
+  role: "Modulo operativo"
+  domain: "Costellazione"
+  status: "active"
+  panel: "webapp/static/panels/agro_ambiente.html"
+  api: "/api/agro_ambiente/query"
+  defensive_capability: "none"
+
+cyberdefense:
+  label: "CyberDefense"
+  role: "Modulo operativo"
+  domain: "Costellazione"
+  status: "active"
+  panel: "webapp/static/panels/cyberdefense.html"
+  api: "/api/cyberdefense/query"
+  defensive_capability: "none"
+
+orbital_space:
+  label: "Orbital & Space"
+  role: "Modulo operativo"
+  domain: "Costellazione"
+  status: "active"
+  panel: "webapp/static/panels/orbital_space.html"
+  api: "/api/orbital_space/query"
+  defensive_capability: "none"
+
+resilienza_emergenza:
+  label: "Resilienza & Emergenza"
+  role: "Modulo operativo"
+  domain: "Costellazione"
+  status: "active"
+  panel: "webapp/static/panels/resilienza_emergenza.html"
+  api: "/api/resilienza_emergenza/query"
+  defensive_capability: "none"
+
+reti_mesh:
+  label: "Reti & Mesh"
+  role: "Modulo operativo"
+  domain: "Costellazione"
+  status: "active"
+  panel: "webapp/static/panels/reti_mesh.html"
+  api: "/api/reti_mesh/query"
+  defensive_capability: "none"
+
+economist:
+  label: "economist"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/economist.html"
+  api: "none"
+  defensive_capability: "none"
+
+orchestrator:
+  label: "orchestrator"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/orchestrator.html"
+  api: "none"
+  defensive_capability: "none"
+
+wallet:
+  label: "wallet"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/wallet.html"
+  api: "none"
+  defensive_capability: "none"
+
+podcast_liberi:
+  label: "podcast_liberi"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/podcast_liberi.html"
+  api: "none"
+  defensive_capability: "none"
+
+starlink_control:
+  label: "starlink_control"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/starlink_control.html"
+  api: "none"
+  defensive_capability: "none"
+
+documentazione_tecnica:
+  label: "documentazione_tecnica"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/documentazione_tecnica.html"
+  api: "none"
+  defensive_capability: "none"
+
+executive_report:
+  label: "executive_report"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/executive_report.html"
+  api: "none"
+  defensive_capability: "none"
+
+roadmap:
+  label: "roadmap"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/roadmap.html"
+  api: "none"
+  defensive_capability: "none"
+
+about:
+  label: "about"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/about.html"
+  api: "none"
+  defensive_capability: "none"
+
+cyberdefense:
+  label: "cyberdefense"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/cyberdefense.html"
+  api: "none"
+  defensive_capability: "none"
+
+orbital_space:
+  label: "orbital_space"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/orbital_space.html"
+  api: "none"
+  defensive_capability: "none"
+
+agro_ambiente:
+  label: "agro_ambiente"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/agro_ambiente.html"
+  api: "none"
+  defensive_capability: "none"
+
+calcolo_ricerca:
+  label: "calcolo_ricerca"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/calcolo_ricerca.html"
+  api: "none"
+  defensive_capability: "none"
+
+radio_sdr:
+  label: "radio_sdr"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/radio_sdr.html"
+  api: "none"
+  defensive_capability: "none"
+
+anonimato_routing:
+  label: "anonimato_routing"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/anonimato_routing.html"
+  api: "none"
+  defensive_capability: "none"
+
+reti_mesh:
+  label: "reti_mesh"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/reti_mesh.html"
+  api: "none"
+  defensive_capability: "none"
+
+performance:
+  label: "performance"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/performance.html"
+  api: "none"
+  defensive_capability: "none"
+
+sistema_core:
+  label: "sistema_core"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/sistema_core.html"
+  api: "none"
+  defensive_capability: "none"
+
+moduli_estesi:
+  label: "moduli_estesi"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/moduli_estesi.html"
+  api: "none"
+  defensive_capability: "none"
+
+media_live:
+  label: "media_live"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/media_live.html"
+  api: "none"
+  defensive_capability: "none"
+
+chat_feed:
+  label: "chat_feed"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/chat_feed.html"
+  api: "none"
+  defensive_capability: "none"
+
+mappe_atlas:
+  label: "mappe_atlas"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/mappe_atlas.html"
+  api: "none"
+  defensive_capability: "none"
+
+resilienza_emergenza:
+  label: "resilienza_emergenza"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/resilienza_emergenza.html"
+  api: "none"
+  defensive_capability: "none"
+
+storage:
+  label: "storage"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/storage.html"
+  api: "none"
+  defensive_capability: "none"
+
+osservazione:
+  label: "osservazione"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/osservazione.html"
+  api: "none"
+  defensive_capability: "none"
+
+ai_analisi:
+  label: "ai_analisi"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/ai_analisi.html"
+  api: "none"
+  defensive_capability: "none"
+
+sperimentazione:
+  label: "sperimentazione"
+  role: "Modulo sidebar"
+  domain: "Interfaccia"
+  status: "active"
+  panel: "webapp/static/panels/sperimentazione.html"
+  api: "none"
+  defensive_capability: "none"
+

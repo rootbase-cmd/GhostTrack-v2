@@ -1,0 +1,25 @@
+{
+  "service": "GhostTrack WebApp",
+  "version": "3.0",
+  "environment": "production",
+
+  "mode": "auto",
+
+  "base_url_dev": "http://127.0.0.1:9090",
+  "base_url_lan": "http://192.168.0.208:9090",
+  "base_url_prod": "http://5.90.8.153:9090",
+
+  "ui": {
+    "theme": "dark",
+    "language": "it",
+    "panels_path": "panels/"
+  },
+
+  "features": {
+    "enable_status_check": true,
+    "enable_docs": true,
+    "enable_modules": true,
+    "enable_podcast_liberi": true
+  }
+}
+
